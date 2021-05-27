@@ -1,76 +1,94 @@
 <head>
+
     <style>
         body,
         html {
             height: 100%;
-            background-color:black;
+            background-color: rgb(7, 7, 7);
         }
 
         * {
             box-sizing: border-box;
         }
-        h2{
+
+        h2 {
+            color: white;
+            padding-right:6px;
+            padding-left:1300px;
+            padding-top: 3px;
             
-            color:white;
+
+        }
+
+        h3 {
+            padding-left: 40px;
+            color: rgb(255, 255, 255);
         }
 
         .bg-img {
             /* The image used */
-            background-image: url("bg.jpg");
+            background-image: url("bg 4.jpg");
 
 
             /* Control the height of the image */
-            height: 95%;
+            height:87%;
 
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
-            background-size:cover;
+            background-size: cover;
             position: relative;
+            opacity:1;
         }
 
         /* Add styles to the form container */
         .container {
             position: relative;
-            right: 25%;
-            left:35%;
-            top:10%;
-            bottom:5%;
-            height: 55%;
+            right: 65%;
+            left: 25%;
+            top: 22%;
+            bottom: 5%;
+            height: 0%;
             margin: 30px;
-            max-width: 500px;
-            background-color:#3604aa;
-            color:white;
+            max-width: 400px;
+            background-color: #0f0f74;
+            opacity:1;
+            color: rgb(255, 251, 251);
         }
 
-        
+
 
         /* Set a style for the submit button */
         .btn {
-            background-color: #e7e7e7;
-            color:#3604aa;
-            padding:10px;
+            background-color: #c9cdda;
+            color: #121213;
+            padding: 10px;
+            padding-left:10px;
             border: none;
             cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
+            width: 60%;
+
         }
 
         .btn:hover {
-            opacity: 1;
+            opacity: 0.6;
         }
     </style>
 </head>
 
 <body>
    
+    <h2>FixASAP</h2>
+    
+
     <div class="bg-img">
+
+       
+
         <form action="/action_page.php" class="container">
-            <h2>What is your issue?</h2>
-            <label for="fname" >First name:</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <h3>What is your issue?</h3>
+            <label for="fname">Full name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
             Which of these services do you require?<br>
             <input type="radio" id="a" name="service" value="lp">
 
@@ -80,13 +98,17 @@
             <input type="radio" id="other" name="gender" value="other">
             <label for="other">Home appliances</label><br><br>
             Issues you are facing:<br>
-            <textarea name="comment" rows="4" cols="50"></textarea><br><br>
-            Address details:<br>
-            <label for="city">City:</label>
+            <textarea name="comment" rows="4" cols="30"></textarea><br><br>
+             <label for="city">City:</label>
             <input type="text" id="city" name="city"><br><br>
             <label for="state">State:</label>
             <input type="text" id="state" name="state"><br><br>
             <button type="submit" class="btn">Find service providers!</button>
         </form>
+        
     </div>
+    <footer class="text-center pt-1 pr-2 pl-2 pb-1" style="background: #000000; color: #ffffff; font-size: 0.7em;  ">For COVID-19 vaccination, kindly register on www.cowin.gov.in</header>
+
+    <!-- ======= Header ======= -->
+    <footer id="header" class="fixed-top" >
 </body>
