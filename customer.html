@@ -1,0 +1,92 @@
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+            background-color:black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        h2{
+            
+            color:white;
+        }
+
+        .bg-img {
+            /* The image used */
+            background-image: url("bg.jpg");
+
+
+            /* Control the height of the image */
+            height: 95%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: relative;
+        }
+
+        /* Add styles to the form container */
+        .container {
+            position: relative;
+            right: 25%;
+            left:35%;
+            top:10%;
+            bottom:5%;
+            height: 55%;
+            margin: 30px;
+            max-width: 500px;
+            background-color:#3604aa;
+            color:white;
+        }
+
+        
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: #e7e7e7;
+            color:#3604aa;
+            padding:10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="bg-img">
+        <form action="/action_page.php" class="container">
+            <h2>What is your issue?</h2>
+            <label for="fname" >First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            Which of these services do you require?<br>
+            <input type="radio" id="a" name="service" value="lp">
+
+            <label for="a">Laptop & PCs</label><br>
+            <input type="radio" id="b" name="service" value="mp">
+            <label for="b">Mobile phones & accessories</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Home appliances</label><br><br>
+            Issues you are facing:<br>
+            <textarea name="comment" rows="4" cols="50"></textarea><br><br>
+            Address details:<br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br><br>
+            <button type="submit" class="btn">Find service providers!</button>
+        </form>
+    </div>
+</body>
